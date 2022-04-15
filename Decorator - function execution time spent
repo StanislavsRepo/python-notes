@@ -5,7 +5,7 @@ def benchmark(func):
 		start = time.time()
 		func()
 		end = time.time()
-		print('[*] Время выполнения: {} секунд.'.format(end-start))
+		print('[*] Execution time: {} seconds.'.format(end-start))
 	return wrapper
 
 @benchmark	
