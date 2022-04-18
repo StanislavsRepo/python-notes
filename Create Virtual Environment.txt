@@ -1,0 +1,42 @@
+#Create virtual environment
+
+python -m venv env
+
+#Put files to another from /env folder
+
+#Virtual environment activation
+
+>source env/Scripts/activate
+~OR~
+env/Scripts/activate
+
+#Instal package example or instal special version package
+#Update package
+
+pip install python-dateutil
+pip install python-dateutil===1.4
+pip install python-fateutil --upgrade
+pip install "python-dateutil==2.7.*" --upgrade 
+(means to upgrade package only with fixed errors)
+
+#Deactivation
+
+deactivate
+
+#List installed libraries and packages
+
+pip freeze
+
+#Create requirements and install to your project
+
+pip freeze > requirements.txt
+ppip install -r requirements.txt
+
+#Remove packages
+
+pip uninstall python-fateutil
+
+#Remove all installed packages based on requirements file
+
+pip uninstall -r requiremnets.txt -y
+
